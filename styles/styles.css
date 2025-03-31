@@ -1,0 +1,140 @@
+:root {
+    --text: #ece4ea;
+--background: #0e090d;
+--primary: #c6a1be;
+--secondary: #6c3e63;
+--accent: #ae659e;
+
+
+}
+
+body {
+    font-family: serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Newspaper Header */
+header {
+    background-color: var(--secondary);
+    color: var(--background);
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 5px solid var(--accent);
+}
+
+header p {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--background);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: var(--accent);
+}
+
+/* Newspaper Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--background);
+}
+
+/* Two-Column Layout */
+.main-content {
+    width: 70%;
+    padding: 20px;
+    background-color: var(--background);
+}
+
+/* Sidebar for Highlights or Smaller News */
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: var(--primary);
+    color: var(--background);
+    border-left: 3px solid var(--accent);
+}
+
+/* Newspaper Article Sections */
+.article {
+    background-color: var(--background);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent);
+}
+
+.article h2 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Image Styling */
+.article img {
+    display: block;
+    width: 100%;
+    border: 3px solid var(--accent);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Sidebar Styling */
+.sidebar h2 {
+    color: var(--background);
+    background-color: var(--secondary);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sidebar p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--secondary);
+    color: var(--background);
+    margin-top: 20px;
+    font-weight: bold;
+    border-top: 5px solid var(--accent);
+}
